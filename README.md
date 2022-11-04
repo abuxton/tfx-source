@@ -1,6 +1,6 @@
 # TFX Source
 
-This source integrates with Terraform server either Terraform Enterprise (TFX) or Terraform Cloud (TFC) hence (TFx), allowing Overmind to pull data about many types of Terraform resources, and the Terraform API endpoints.
+This source integrates with Terraform server either Terraform Enterprise (TFE) or Terraform Cloud (TFC) hence (TFx), allowing Overmind to pull data about many types of Terraform resources, and the Terraform API endpoints.
 
 ## Sources
 
@@ -34,7 +34,7 @@ Get Workspace info <https://developer.hashicorp.com/terraform/cloud-docs/api-doc
 
 Gets a specific workspace by ID.
 
-**Query format:** The ID of the instance e.g. `i-09b0c0768577775ef`
+**Query format:** The ID of the workspace e.g. `ws-Example123`
 
 #### `Find`
 
@@ -56,6 +56,7 @@ All configuration options can be provided via the command line or as environment
 | `AUTO_CONFIG` | `--auto-config` | | Use the local Terraform config, the same as the Terraform Cli could use. This can be set up with `TFE TODO` |
 | `TFE_TOKEN` | `--tfe-token` | | The ID of the access key to use |
 | `TFE_HOSTNAME` | `--tfe-hostname` | | The AWS region that this source should operate in |
+
 ### `srcman` config
 
 When running in srcman, all of the above parameters marked with a checkbox are provided automatically, any additional parameters must be provided under the `config` key. These key-value pairs will become files in the `/etc/srcman/config` directory within the container.
