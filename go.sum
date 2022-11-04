@@ -143,7 +143,6 @@ github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+o
 github.com/klauspost/compress v1.15.7 h1:7cgTQxJCU/vy+oP/E3B9RGbQTgbiVzIJWIKOLoAsPok=
 github.com/kr/fs v0.1.0/go.mod h1:FFnZGqtBN9Gxj7eW1uZ42v5BccTP0vu6NEaFoC2HwRg=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
-github.com/kr/pretty v0.2.1/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
 github.com/kr/pretty v0.3.0 h1:WgNl7dwNpEZ6jJ9k1snq4pZsg7DOEN8hP9Xw0Tsjwk0=
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
@@ -170,6 +169,8 @@ github.com/overmindtech/sdp-go v0.13.3 h1:jv/hWV34pcJHmdcLSCF5ObPprJKb9QiCeT4cTI
 github.com/overmindtech/sdp-go v0.13.3/go.mod h1:9SFx+Se5hgWxQviaR6f/0MgFO0xBLbqOyfunqqks7T4=
 github.com/overmindtech/sdpcache v0.3.2 h1:0godJzpEH1QfNOO54ii14xH2LMn4mjHpiANRmqayEM4=
 github.com/overmindtech/sdpcache v0.3.2/go.mod h1:l937jFOK86yO37R9SdtpDbz0m3Uf8tEIiLWCXq690J8=
+github.com/overmindtech/source-template v0.0.0-20221031100742-876881c02407 h1:ItJKGQUVopDe4nHm60RX4Eq72QAgqDUIDyT/e7Q3dJo=
+github.com/overmindtech/source-template v0.0.0-20221031100742-876881c02407/go.mod h1:EI10wXGFts/pkkGDOs43KPJq1Q312AwSJmXqGUwH2QU=
 github.com/overmindtech/tokenx-client v0.3.0 h1:gdV85d6nscLau9wl0ZM7KY5QoF+0qrYXm/VTJmR4d2k=
 github.com/overmindtech/tokenx-client v0.3.0/go.mod h1:PIhC4vKjiovFDi+eqFDSDK89WFdjW5kASytZgbfIq4Y=
 github.com/pelletier/go-toml v1.9.5 h1:4yBQzkHv+7BHq2PQUZF3Mx0IYxG7LsP222s7Agd3ve8=
@@ -522,7 +523,6 @@ google.golang.org/protobuf v1.28.1/go.mod h1:HV8QOd/L58Z+nl8r43ehVNZIU/HEI6OcFqw
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c h1:Hei/4ADfdWqJk1ZMxUNpqntNwaWcugrBjAiHlqqRiVk=
-gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c/go.mod h1:JHkPIbrfpd72SG/EVd6muEfDQjcINNoR0C8j2r3qZ4Q=
 gopkg.in/errgo.v2 v2.1.0/go.mod h1:hNsd1EY+bozCKY1Ytp96fpM3vjJbqLJn88ws8XvfDNI=
 gopkg.in/ini.v1 v1.67.0 h1:Dgnx+6+nfE+IfzjUEISNeydPJh9AXNNsWbGP9KzCsOA=
 gopkg.in/ini.v1 v1.67.0/go.mod h1:pNLf8WUiyNEtQjuu5G5vTm06TEv9tsIgeAvK8hOrP4k=
