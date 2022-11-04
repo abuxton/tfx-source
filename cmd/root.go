@@ -27,11 +27,11 @@ var cfgFile string
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "source-template",
-	Short: "Remote primary source for some technology",
-	Long: `A template for building sources.
-
-Edit this once you have created your source
+	Use:   "tfx-source",
+	Short: "A source to easily interact with TFC/TFE.",
+	Long: `Leveraging the API can become a burden for common tasks.
+	TFx-source aims to ease that challenge for common and repeatable tasks. This application
+	can be used to interact with either Terraform Cloud or Terraform Enterprise.
 `,
 	Run: func(cmd *cobra.Command, args []string) {
 		// Get srcman supplied config
@@ -49,7 +49,8 @@ Edit this once you have created your source
 		}
 
 		// ⚠️ Your custom configration goes here
-		yourCustomFlag := viper.GetString("your-custom-flag")
+		tfxToken := viper.GetString("tfe-token")
+		tfxHostname := viper.GetString("tfe-hostname")
 
 		var natsNKeySeedLog string
 		var tokenClient multiconn.TokenClient
@@ -64,7 +65,8 @@ Edit this once you have created your source
 			"max-parallel":     maxParallel,
 			"nats-jwt":         natsJWT,
 			"nats-nkey-seed":   natsNKeySeedLog,
-			"your-custom-flag": yourCustomFlag,
+			"tfe-token":        tfeToken,
+			"tfe-hostname":     tfeHostname,
 		}).Info("Got config")
 
 		// Validate the auth params and create a token client if we are using
@@ -193,7 +195,8 @@ func init() {
 
 	// ⚠️ Add your own custom config options below, the example "your-custom-flag"
 	// should be replaced with your own config or deleted
-	rootCmd.PersistentFlags().String("your-custom-flag", "someDefaultValue.conf", "Description of what your option is meant to do")
+	rootCmd.PersistentFlags().String("tfe-hostname", "app.terraform.io", "(Optional) Defaultsto app.terraform.io, provide hostname for Terraform enterprise server")
+	rootCmd.PersistentFlags().String("tfe-token", "", "The same user or Team token as provided to the Terraform Cli")
 
 	// Bind these to viper
 	viper.BindPFlags(rootCmd.PersistentFlags())
